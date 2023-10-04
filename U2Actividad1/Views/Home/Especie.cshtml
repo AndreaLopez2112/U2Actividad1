@@ -1,0 +1,18 @@
+﻿@model U2Actividad1.Models.ViewModels.EspecieViewModel;
+@{
+    Layout = "Layout";
+}
+<div class="especieficha1">
+    <img src="~/especies/@(Model.id).jpg" />
+    <div>
+        <h1>@(Model.Especie)</h1>
+        <p><label>Clase:</label><a href="~/especies/@(Model.ClaseAnimal)">@(Model.ClaseAnimal)</a></p>
+        <p><label>Peso:</label>@(Model.Peso)</p>
+        <p><label>Tamaño:</label>@(Model.Tamaño)</p>
+        <p><label>Habitat:</label>@(Model.Habitad)</p>
+        <p><label>Descripción:</label>@(Model.Obeservaciones)</p>
+        <p></p>
+    </div>
+
+    <a href="~/Home/especies/@(Model.ClaseAnimal)">Regresar</a>
+</div>
